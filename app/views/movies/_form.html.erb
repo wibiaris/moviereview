@@ -1,4 +1,4 @@
-<%= simple_form_for @movies do |f| %>
+<%= simple_form_for @movies, html:  { multipart: true } do |f| %>
 
 <div class="field">
 	<%= f.label :title %><br>
@@ -20,6 +20,16 @@
 <div class="field">
 	<%= f.label :director %><br>
 	<%= f.text_field :director %>
+</div>
+
+<div class="field">
+	<%= f.label :rating %><br>
+	<%= f.text_field :rating %>
+</div>
+
+<div class="field">
+	<%= f.label :image %><br>
+	<%= f.file_field :image %>
 </div>
 
 
