@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :reviews, except: [:show, :index]
   end
  
-  resources :reviews
+  
   root 'movies#index'
 
 end
