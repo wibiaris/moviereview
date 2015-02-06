@@ -53,8 +53,19 @@ GEM
       railties (>= 3.2.6, < 5)
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    elasticsearch (1.0.6)
+      elasticsearch-api (= 1.0.6)
+      elasticsearch-transport (= 1.0.6)
+    elasticsearch-api (1.0.6)
+      multi_json
+    elasticsearch-transport (1.0.6)
+      faraday
+      multi_json
     erubis (2.7.0)
     execjs (2.3.0)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    hashie (3.4.0)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.6)
@@ -69,6 +80,7 @@ GEM
     mime-types (2.4.3)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multipart-post (2.0.0)
     orm_adapter (0.5.0)
     paperclip (4.2.1)
       activemodel (>= 3.0.0)
@@ -106,6 +118,10 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    searchkick (0.8.5)
+      activemodel
+      elasticsearch (>= 1)
+      hashie
     simple_form (3.0.3)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -146,6 +162,7 @@ DEPENDENCIES
   rails (= 4.1.8)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  searchkick (~> 0.8.3)
   simple_form
   spring
   turbolinks
